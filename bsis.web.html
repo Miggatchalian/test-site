@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="bsis.web.css">
+	<title> Wizarding Academy </title>
+</head>
+
+<body>
+	<img src="./hpbg.gif" class="background-img">
+	<audio autoplay loop src="Hedwig's Theme.mp3" type="audio/mpeg"></audio>
+	<div class="main-body">
+		<!-- 1st subdiv
+		 Menu Navigation
+		 Redirections
+		 Hover
+		 Active Class -->
+		<div class="mega-menu" id="mymenu">
+			<ul>
+				<li><a href="./bsis.web.html" class="active1">Home</a></li>
+				<li><a href="./blogpage.html" class="popup2">Blogs</a></li>
+				<li><a href="./contactpage.html" class="popup3">Contacts</a></li>
+				<li><a href="./aboutus.html" class="popup4">About</a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<!--<i class="fa fa-bars"></i>--></a></li>
+			</ul>
+			<input type="text" placeholder="Search...">
+			<i class="fas fa-thin fa-magnifying-glass"></i>
+			<i class="fas fa-regular fa-circle-user" onclick="toggleMenu()"></i>
+			<img src="hplogo2.png" class="navimg" width="200px" height="90px">
+		</div>
+		<div class="profile-menu" id="profileMenu">
+			<div class="profile">
+				<div class="user">
+					<i class="fa fa-regular fa-circle-user"></i>
+					<h2 class="user"> User </h2>
+				</div>
+				<hr>
+				<a href="#" class="profile-links">
+					<p> Log In </p>
+					<span>></span>
+				</a>
+				<a href="#" class="profile-links">
+					<p> Register </p>
+					<span>></span>
+				</a>
+				<a href="#" class="profile-links">
+					<p> Settings </p>
+					<span>></span>
+				</a>
+				<a href="#" class="profile-links">
+					<p> Help </p>
+					<span>></span>
+				</a>
+			</div>
+		</div>
+
+		<!-- 2nd subdiv
+		 1st Section 
+		 Hero Banner Setup -->
+		<div class="main-hero">
+			<video autoplay muted loop src="hpotter.mp4"></video>
+		</div>
+
+		<!-- 3rd subdiv
+		 2nd Section
+		 2 columns setup -->
+		<div class="section2">
+			<br>
+			<h2 class="announce">
+				<marquee>Dumbledore's Announcements</marquee>
+			</h2>
+			<div class="announcements">
+				<!-- 1st column -->
+				<div class="col-1">
+					<img src="dumble.gif" alt="dumbledore">
+				</div>
+				<!-- 2nd Column -->
+				<div class="col-2">
+					<div class="wc">
+						<h3 class="" id="wc" style="--j:1"> W </h3>
+						<h3 class="" id="wc" style="--j:2"> e </h3>
+						<h3 class="" id="wc" style="--j:3"> l </h3>
+						<h3 class="" id="wc" style="--j:4"> c </h3>
+						<h3 class="" id="wc" style="--j:5"> o </h3>
+						<h3 class="" id="wc" style="--j:6"> m </h3>
+						<h3 class="" id="wc" style="--j:7"> e </h3>
+						<h3 class="" id="space"></h3>
+						<h3 class="" id="wc" style="--j:8"> t </h3>
+						<h3 class="" id="wc" style="--j:9"> o </h3>
+						<h3 class="" id="space"></h3>
+						<h3 class="" id="wc" style="--j:10"> H </h3>
+						<h3 class="" id="wc" style="--j:11"> o </h3>
+						<h3 class="" id="wc" style="--j:12"> g </h3>
+						<h3 class="" id="wc" style="--j:13"> w </h3>
+						<h3 class="" id="wc" style="--j:14"> a </h3>
+						<h3 class="" id="wc" style="--j:15"> r </h3>
+						<h3 class="" id="wc" style="--j:16"> t </h3>
+						<h3 class="" id="wc" style="--j:17"> s </h3>
+						<h3 class="" id="space"></h3>
+						<h3 class="" id="wc" style="--j:18"> ! </h3>
+					</div>
+					<h3 class="" id="date"> February 13, 2025</h3>
+					<p>
+						‘It does not do to dwell on dreams and forget to live, remember that.’
+						‘To the well-organised mind, death is but the next great adventure.’
+						‘Call him Voldemort, Harry. Always use the proper name for things. Fear of a name increases fear
+						of the thing itself.’
+						‘The truth. It is a beautiful and terrible thing, and should therefore be treated with great
+						caution.’
+						‘It is our choices, Harry, that show what we truly are, far more than our abilities.’
+						‘You think the dead we have loved ever truly leave us? You think that we don’t recall them more
+						clearly than ever in times of great trouble?’
+						‘The consequences of our actions are always so complicated, so diverse, that predicting the
+						future is a very difficult business indeed …’ - Albus Dumbledore
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 4th subdiv
+		 3rd Section
+		 1 full-width setup -->
+		<div class="movies">
+			<h2>Harry Potter Movies</h2>
+			<div class="moviescontainer">
+				<img src="movie1.jpg" onclick="window.open('https://www.imdb.com/title/tt0241527/?ref_=ls_t_1');">
+				<img src="movie2.jpg" onclick="window.open('https://www.imdb.com/title/tt0295297/?ref_=ls_t_2');">
+				<img src="movie3.jpg" onclick="window.open('https://www.imdb.com/title/tt0304141/?ref_=ls_t_3');">
+				<img src="movie4.jpg" onclick="window.open('https://www.imdb.com/title/tt0330373/?ref_=ls_t_4');">
+				<img src="movie5.jpg" onclick="window.open('https://www.imdb.com/title/tt0373889/?ref_=ls_t_6');">
+				<img src="movie6.jpg" onclick="window.open('https://www.imdb.com/title/tt0417741/?ref_=ls_t_7');">
+				<img src="movie7.jpg" onclick="window.open('https://www.imdb.com/title/tt0926084/?ref_=ls_t_10');">
+				<img src="movie8.jpg" onclick="window.open('https://www.imdb.com/title/tt1201607/?ref_=ls_t_12');">
+			</div>
+		</div>
+
+		<!-- 5th subdiv
+		 4th section
+		 3 columns setup -->
+		<div class="three-columns-text">
+			<h1> Three Unforgivable Curses </h1>
+		</div>
+		<div class="three-columns">
+			<div class="column">
+				<img src="crucio.gif">
+				<div class="column-text">
+					<h1> Cruciatus Curse </h1>
+					<p>
+						The <span class="glow"> Cruciatus Curse </span> also known as the Torture Curse, When cast
+						successfully
+						on a fellow sentient human being or living creature, the curse inflicted intense, excruciating
+						physical
+						pain on the victim, and would result in insanity if the victim was subjected to it for a
+						prolonged time.
+						The penalty for the use of this curse on another human being was a life sentence in Azkaban.
+					</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="imperio.gif">
+				<div class="column-text">
+					<h1> Imperius Curse </h1>
+					<p>
+						The <span class="glow"> Imperius Curse </span>, When cast successfully, the curse placed the
+						victim completely
+						under the caster's control, making the victim unquestionably obedient to the caster. A person
+						under the curse
+						was said to be Imperiused. A person with exceptional strength of will could resist the curse.
+						The fact that this
+						curse could be directly defended against, made it unique amongst the Unforgivable Curses.
+					</p>
+				</div>
+			</div>
+			<div class="column">
+				<img src="aveda.gif">
+				<div class="column-text">
+					<h1> Killing Curse </h1>
+					<p>
+						The <span class="glow"> Killing Curse </span> (Avada Kedavra), When cast successfully on a
+						living person
+						or creature, the curse caused instantaneous and painless death, without causing any injury to
+						the body,
+						and without any trace of violence, blinding flash or jet of green light and a distinctive
+						rushing sound
+						when being cast. The only known counter-spell to this curse was sacrificial protection, which
+						used the power
+						of love.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer 
+		 Social links-Redirections
+		 Other contents -->
+		<div class="footer">
+			<div class="footer-container">
+				<div class="row">
+					<div class="footer-col-1">
+						<img src="hplogo2.png" width="300px" height="130px">
+					</div>
+					<div class="footer-col-2">
+						<h3> Harry Potter's Social Media Links : </h3>
+						<a href="https://www.facebook.com/share/1EDWijQkBj/?mibextid=LQQJ4d" target="_blank"><img
+								src="fb.png" width="50px"></a>
+						<a href="https://www.instagram.com/harrypotter" target="_blank"><img src="ig.avif"
+								width="50px"></a>
+						<a href="https://x.com/harrypotter" target="_blank"><img src="x.avif" width="50px"></a>
+						<a href="https://www.tiktok.com/@harrypotter" target="_blank"><img src="tiktok.webp"
+								width="50px"></a>
+						<a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" target="_blank"><img
+								src="yt.webp" width="60px"></a>
+						<p>Leave us a like!</p>
+						<i class="fa fa-thin fa-thumbs-up"></i>
+						<h5> &copy; J.K. Rowling (1999) | Harry Potter. </h5>
+					</div>
+					<div class="footer-col-3">
+						<h3> "You'll stay with me?" <br>
+							"Until the very end" Said James. <br>
+							"They won't be able to see you?" Asked Harry. <br>
+							"We are part of you" Said Sirius. <br>
+							"Invisible to anyone else" <br>
+							Harry looked at his mother. <br>
+							"Stay close to me" He Said Quietly. <br>
+						</h3>
+						<br>
+						<p>
+							- Harry Potter and the Deathly Hallows
+						</p>
+					</div>
+				</div>
+				<hr>
+				<p class="name">Academy of Potterheads</p>
+			</div>
+		</div>
+	</div>
+	<script language="javascript" type="text/javascript">
+		let profileMenu = document.getElementById("profileMenu");
+
+		function toggleMenu() {
+			profileMenu.classList.toggle("open-menu");
+		}
+	</script>
+</body>
+
+</html>

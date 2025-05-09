@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+	<link rel="stylesheet" href="bsis.web.css">
+	<title>Blogs Page</title>
+</head>
+
+<body>
+
+	<body>
+		<img src="./hpbg.gif" class="background-img">
+		<audio autoplay src="The Dark Mark.mp3" type="audio/mpeg"></audio>
+		<div class="main-body">
+			<!-- 1st subdiv -->
+			<div class="mega-menu" id="mymenu">
+				<ul>
+					<li><a href="./bsis.web.html" class="popup1">Home</a></li>
+					<li><a href="./blogpage.html" class="active2">Blogs</a></li>
+					<li><a href="./contactpage.html" class="popup3">Contacts</a></li>
+					<li><a href="./aboutus.html" class="popup4">About</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<!--<i class="fa fa-bars"></i>-->
+						</a></li>
+				</ul>
+				<input type="text" placeholder="Search...">
+				<i class="fas fa-thin fa-magnifying-glass"></i>
+				<i class="fas fa-regular fa-circle-user" onclick="toggleMenu()"></i>
+				<img src="hplogo2.png" class="navimg" width="200px" height="90px">
+			</div>
+			<div class="profile-menu" id="profileMenu">
+				<div class="profile">
+					<div class="user">
+						<i class="fa fa-regular fa-circle-user"></i>
+						<h2 class="user"> User </h2>
+					</div>
+					<hr>
+					<a href="#" class="profile-links">
+						<p> Log In </p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-links">
+						<p> Register </p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-links">
+						<p> Settings </p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-links">
+						<p> Help </p>
+						<span>></span>
+					</a>
+				</div>
+			</div>
+
+			<!-- Main Body -->
+			<div class="blogs">
+				<img src="blogsbg.jpg">
+			</div>
+			<!-- Footer -->
+			<div class="footer">
+				<div class="footer-container">
+					<div class="row">
+						<div class="footer-col-1">
+							<img src="hplogo2.png" width="300px" height="130px">
+						</div>
+						<div class="footer-col-2">
+							<h3> Harry Potter's Social Media Links : </h3>
+							<a href="https://www.facebook.com/share/1EDWijQkBj/?mibextid=LQQJ4d" target="_blank"><img
+									src="fb.png" width="50px"></a>
+							<a href="https://www.instagram.com/harrypotter" target="_blank"><img src="ig.avif"
+									width="50px"></a>
+							<a href="https://x.com/harrypotter" target="_blank"><img src="x.avif" width="50px"></a>
+							<a href="https://www.tiktok.com/@harrypotter" target="_blank"><img src="tiktok.webp"
+									width="50px"></a>
+							<a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" target="_blank"><img
+									src="yt.webp" width="60px"></a>
+							<h5> &copy; J.K. Rowling (1999) | Harry Potter. </h5>
+						</div>
+						<div class="footer-col-3">
+							<h3> "You'll stay with me?" <br>
+								"Until the very end" Said James. <br>
+								"They won't be able to see you?" Asked Harry. <br>
+								"We are part of you" Said Sirius. <br>
+								"Invisible to anyone else" <br>
+								Harry looked at his mother. <br>
+								"Stay close to me" He Said Quietly. <br>
+							</h3>
+							<br>
+							<p>
+								- Harry Potter and the Deathly Hallows
+							</p>
+						</div>
+					</div>
+					<hr>
+					<p class="name">Academy of Potterheads</p>
+				</div>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript">
+			let profileMenu = document.getElementById("profileMenu");
+
+			function toggleMenu() {
+				profileMenu.classList.toggle("open-menu");
+			}
+		</script>
+	</body>
+
+</html>

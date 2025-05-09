@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="bsis.web.css">
+  <title>Contact Page</title>
+</head>
+
+<body>
+  <img src="./hpbg.gif" class="background-img">
+  <audio autoplay loop src="Diagon Alley and the Gringotts Vault.mp3" type="audio.mpeg"></audio>
+  <!-- 1st subiv
+   Menu Navigation
+   Redirections
+   Hover
+   Active Class -->
+  <div class="main-body">
+    <div class="mega-menu" id="mymenu">
+      <ul>
+        <li><a href="./bsis.web.html" class="popup1">Home</a></li>
+        <li><a href="./blogpage.html" class="popup2">Blogs</a></li>
+        <li><a href="./contactpage.html" class="active3">Contacts</a></li>
+        <li><a href="./aboutus.html" class="popup4">About</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <!--<i class="fa fa-bars"></i>-->
+          </a></li>
+      </ul>
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-thin fa-magnifying-glass"></i>
+      <i class="fas fa-regular fa-circle-user" onclick="toggleMenu()"></i>
+      <img src="hplogo2.png" class="navimg" width="200px" height="90px">
+    </div>
+    <div class="profile-menu" id="profileMenu">
+      <div class="profile">
+        <div class="user">
+          <i class="fa fa-regular fa-circle-user"></i>
+          <h2 class="user"> User </h2>
+        </div>
+        <hr>
+        <a href="#" class="profile-links">
+          <p> Log In </p>
+          <span>></span>
+        </a>
+        <a href="#" class="profile-links">
+          <p> Register </p>
+          <span>></span>
+        </a>
+        <a href="#" class="profile-links">
+          <p> Settings </p>
+          <span>></span>
+        </a>
+        <a href="#" class="profile-links">
+          <p> Help </p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 2nd subiv
+     1st Section
+     Iframe GMap setup -->
+    <div class="location">
+      <h2> Where are we located? </h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d492939.8340952867!2d120.26874667461695!3d15.153266443451418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339653005d4b0979%3A0xe1d81c7a5b40b521!2sBulacan%20Polytechnic%20College%20Main%20Campus!5e0!3m2!1sen!2sph!4v1742219274476!5m2!1sen!2sph"
+        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br><br>
+
+    <!-- 3rd subiv
+     2nd  Section 
+     Contact Form
+     Width 
+     Alignment -->
+    <div class="owl">
+      <img src="owl.gif">
+      <p> Let us know if you want us <br> to notify you </p>
+      <i class="fa fa-thin fa-bell"></i>
+    </div>
+    <div class="contact">
+      <h1> GET IN TOUCH WITH US BY FILLING OUT THIS FORM ! </h1>
+      <div class="letter">
+        <form>
+          <div class="input-box-name">
+            <input type="text" placeholder="Enter your first name" required />
+            <input type="text" placeholder="Enter your last name" required />
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="input-box">
+            <input type="tel" placeholder="Enter your phone number" required />
+          </div>
+          <div class="input-box">
+            <textarea placeholder="Write message here" required /></textarea>
+          </div>
+          <button type="sumbit" class="button"> Send to the Owl Post Office </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer
+     Social Links-Redirections
+     Other Contents -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="hplogo2.png" width="300px" height="130px">
+          </div>
+          <div class="footer-col-2">
+            <h3> Harry Potter's Social Media Links : </h3>
+            <a href="https://www.facebook.com/share/1EDWijQkBj/?mibextid=LQQJ4d" target="_blank"><img src="fb.png"
+                width="50px"></a>
+            <a href="https://www.instagram.com/harrypotter" target="_blank"><img src="ig.avif" width="50px"></a>
+            <a href="https://x.com/harrypotter" target="_blank"><img src="x.avif" width="50px"></a>
+            <a href="https://www.tiktok.com/@harrypotter" target="_blank"><img src="tiktok.webp" width="50px"></a>
+            <a href="https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ" target="_blank"><img src="yt.webp"
+                width="60px"></a>
+            <p>Leave us a like!</p>
+            <i class="fa fa-thin fa-thumbs-up"></i>
+            <h5> &copy; J.K. Rowling (1999) | Harry Potter. </h5>
+          </div>
+          <div class="footer-col-3">
+            <h3> "You'll stay with me?" <br>
+              "Until the very end" Said James. <br>
+              "They won't be able to see you?" Asked Harry. <br>
+              "We are part of you" Said Sirius. <br>
+              "Invisible to anyone else" <br>
+              Harry looked at his mother. <br>
+              "Stay close to me" He Said Quietly. <br>
+            </h3>
+            <br>
+            <p>
+              - Harry Potter and the Deathly Hallows
+            </p>
+          </div>
+        </div>
+        <hr>
+        <p class="name">Academy of Potterheads</p>
+      </div>
+    </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu() {
+      profileMenu.classList.toggle("open-menu");
+    }
+  </script>
+</body>
+
+</html>
